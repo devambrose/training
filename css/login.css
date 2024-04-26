@@ -1,0 +1,90 @@
+body,html{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: radial-gradient(circle at top right, rgb(4, 20, 62) 0%, rgb(4, 20, 62) 28%,rgb(49, 29, 62) 28%, rgb(49, 29, 62) 45%,rgb(94, 38, 62) 45%, rgb(94, 38, 62) 63%,rgb(138, 47, 62) 63%, rgb(138, 47, 62) 100%);
+}
+
+#main-content{
+    float: left;
+    height:100vh;
+    width: 100%;
+}
+
+#banner{
+    flex-direction: column;
+}
+
+#banner span{
+    margin:auto;
+}
+
+#login-section{
+    width:50%;
+    border-radius: 4px;
+    overflow: hidden;
+    background:rgb(255, 255, 255,0.78);
+}
+#login-section form{
+    padding: 35px;
+}
+#login-section form button{
+    background: rgb(49, 29, 62);
+    color: white;
+}
+#login-section form button:hover{
+    background: rgb(138, 47, 62);
+}
+
+.bg-radial{
+    background-color: rgb(49, 29, 62);
+}
+
+.noto-sans-400 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+  }
+  
+  #submitButton{
+    float: right;
+  }
+
+  .lugrasimo-regular {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    #banner{
+        display: none !important;
+    }
+
+    #login-section{
+        width: 90% !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 930px) {
+    body {
+      background-color: lightblue;
+    }
+
+    #banner{
+        display: none !important;
+    }
+
+    #login-section{
+        width: 90% !important;
+    }
+
+  }

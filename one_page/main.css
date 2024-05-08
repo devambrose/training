@@ -1,0 +1,20 @@
+.data-container{
+    width: 100%;
+    float: left;
+    min-height: 90vh;
+}
+
+body,html{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    
+}
+#menu-container{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 10;
+}

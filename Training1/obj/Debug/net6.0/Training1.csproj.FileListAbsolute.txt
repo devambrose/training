@@ -1,0 +1,15 @@
+E:\training\Training1\bin\Debug\net6.0\Training1.exe
+E:\training\Training1\bin\Debug\net6.0\Training1.deps.json
+E:\training\Training1\bin\Debug\net6.0\Training1.runtimeconfig.json
+E:\training\Training1\bin\Debug\net6.0\Training1.dll
+E:\training\Training1\bin\Debug\net6.0\Training1.pdb
+E:\training\Training1\obj\Debug\net6.0\Training1.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\Training1\obj\Debug\net6.0\Training1.AssemblyInfoInputs.cache
+E:\training\Training1\obj\Debug\net6.0\Training1.AssemblyInfo.cs
+E:\training\Training1\obj\Debug\net6.0\Training1.csproj.CoreCompileInputs.cache
+E:\training\Training1\obj\Debug\net6.0\Training1.sourcelink.json
+E:\training\Training1\obj\Debug\net6.0\Training1.dll
+E:\training\Training1\obj\Debug\net6.0\refint\Training1.dll
+E:\training\Training1\obj\Debug\net6.0\Training1.pdb
+E:\training\Training1\obj\Debug\net6.0\Training1.genruntimeconfig.cache
+E:\training\Training1\obj\Debug\net6.0\ref\Training1.dll

@@ -1,0 +1,15 @@
+E:\training\training\c-switchcase\bin\Debug\net6.0\c-switchcase.exe
+E:\training\training\c-switchcase\bin\Debug\net6.0\c-switchcase.deps.json
+E:\training\training\c-switchcase\bin\Debug\net6.0\c-switchcase.runtimeconfig.json
+E:\training\training\c-switchcase\bin\Debug\net6.0\c-switchcase.dll
+E:\training\training\c-switchcase\bin\Debug\net6.0\c-switchcase.pdb
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.AssemblyInfoInputs.cache
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.AssemblyInfo.cs
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.csproj.CoreCompileInputs.cache
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.sourcelink.json
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.dll
+E:\training\training\c-switchcase\obj\Debug\net6.0\refint\c-switchcase.dll
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.pdb
+E:\training\training\c-switchcase\obj\Debug\net6.0\c-switchcase.genruntimeconfig.cache
+E:\training\training\c-switchcase\obj\Debug\net6.0\ref\c-switchcase.dll

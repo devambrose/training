@@ -1,0 +1,15 @@
+E:\training\training\Conditionals\bin\Debug\net6.0\Conditionals.exe
+E:\training\training\Conditionals\bin\Debug\net6.0\Conditionals.deps.json
+E:\training\training\Conditionals\bin\Debug\net6.0\Conditionals.runtimeconfig.json
+E:\training\training\Conditionals\bin\Debug\net6.0\Conditionals.dll
+E:\training\training\Conditionals\bin\Debug\net6.0\Conditionals.pdb
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.AssemblyInfoInputs.cache
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.AssemblyInfo.cs
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.csproj.CoreCompileInputs.cache
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.sourcelink.json
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.dll
+E:\training\training\Conditionals\obj\Debug\net6.0\refint\Conditionals.dll
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.pdb
+E:\training\training\Conditionals\obj\Debug\net6.0\Conditionals.genruntimeconfig.cache
+E:\training\training\Conditionals\obj\Debug\net6.0\ref\Conditionals.dll

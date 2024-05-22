@@ -1,0 +1,15 @@
+E:\training\training\intro_classes\bin\Debug\net6.0\intro_classes.exe
+E:\training\training\intro_classes\bin\Debug\net6.0\intro_classes.deps.json
+E:\training\training\intro_classes\bin\Debug\net6.0\intro_classes.runtimeconfig.json
+E:\training\training\intro_classes\bin\Debug\net6.0\intro_classes.dll
+E:\training\training\intro_classes\bin\Debug\net6.0\intro_classes.pdb
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.AssemblyInfoInputs.cache
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.AssemblyInfo.cs
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.csproj.CoreCompileInputs.cache
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.sourcelink.json
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.dll
+E:\training\training\intro_classes\obj\Debug\net6.0\refint\intro_classes.dll
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.pdb
+E:\training\training\intro_classes\obj\Debug\net6.0\intro_classes.genruntimeconfig.cache
+E:\training\training\intro_classes\obj\Debug\net6.0\ref\intro_classes.dll

@@ -1,0 +1,15 @@
+E:\training\training\insertion-sort\bin\Debug\net6.0\insertion-sort.exe
+E:\training\training\insertion-sort\bin\Debug\net6.0\insertion-sort.deps.json
+E:\training\training\insertion-sort\bin\Debug\net6.0\insertion-sort.runtimeconfig.json
+E:\training\training\insertion-sort\bin\Debug\net6.0\insertion-sort.dll
+E:\training\training\insertion-sort\bin\Debug\net6.0\insertion-sort.pdb
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.AssemblyInfoInputs.cache
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.AssemblyInfo.cs
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.csproj.CoreCompileInputs.cache
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.sourcelink.json
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.dll
+E:\training\training\insertion-sort\obj\Debug\net6.0\refint\insertion-sort.dll
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.pdb
+E:\training\training\insertion-sort\obj\Debug\net6.0\insertion-sort.genruntimeconfig.cache
+E:\training\training\insertion-sort\obj\Debug\net6.0\ref\insertion-sort.dll

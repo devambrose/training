@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\projects\\training\\HrApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\views\\allowance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:views\\allowance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\controllers\\allowancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:controllers\\allowancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\entities\\allowance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:entities\\allowance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\database\\applicationdatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:database\\applicationdatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\entities\\dependant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:entities\\dependant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|c:\\projects\\training\\hrapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6819D9D8-AF50-4339-9C20-49CDFDAA2C83}|HrApplication.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDatabaseContext.cs",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Database\\ApplicationDatabaseContext.cs",
+              "RelativeDocumentMoniker": "Database\\ApplicationDatabaseContext.cs",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Database\\ApplicationDatabaseContext.cs",
+              "RelativeToolTip": "Database\\ApplicationDatabaseContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:14:07.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:09:17.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AllowanceController.cs",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Controllers\\AllowanceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AllowanceController.cs",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Controllers\\AllowanceController.cs",
+              "RelativeToolTip": "Controllers\\AllowanceController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwC8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:37:48.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Views\\Allowance\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Allowance\\Index.cshtml",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Views\\Allowance\\Index.cshtml",
+              "RelativeToolTip": "Views\\Allowance\\Index.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAUwGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T06:42:52.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dependant.cs",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Entities\\Dependant.cs",
+              "RelativeDocumentMoniker": "Entities\\Dependant.cs",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Entities\\Dependant.cs",
+              "RelativeToolTip": "Entities\\Dependant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:18:22.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:35:22.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Allowance.cs",
+              "DocumentMoniker": "C:\\projects\\training\\HrApplication\\Entities\\Allowance.cs",
+              "RelativeDocumentMoniker": "Entities\\Allowance.cs",
+              "ToolTip": "C:\\projects\\training\\HrApplication\\Entities\\Allowance.cs",
+              "RelativeToolTip": "Entities\\Allowance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T07:01:57.386Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

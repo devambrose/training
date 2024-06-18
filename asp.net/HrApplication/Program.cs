@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var connectionString = "server=127.0.0.1;database=hr_application;port=3306;uid=dev;pwd=password";
+var connectionString = "server=127.0.0.1;database=hr_application;port=3306;uid=root;pwd=1234A";
 
 builder.Services.AddDbContext<ApplicationDatabaseContext>(context =>
 {

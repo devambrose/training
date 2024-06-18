@@ -40,7 +40,6 @@ namespace HrApplication.Controllers
                 Amount = Double.Parse(keyvalues["amount"])    
             });
 
-            _databaseContext.SaveChanges();
 
             return Json(new { success=true,message="Allowance Created Successfully"});
         }

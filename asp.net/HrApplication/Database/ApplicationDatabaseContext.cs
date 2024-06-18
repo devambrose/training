@@ -15,6 +15,7 @@ namespace HrApplication.Database
         public DbSet<Allowance> Allowances { get; set; }
 
 
+
         //configuration to connect to the database
 
        // define our table structures and the tables that we are going to access

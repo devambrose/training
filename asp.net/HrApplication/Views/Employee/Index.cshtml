@@ -2,7 +2,7 @@
 @{
 }
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary load-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="0" >
     Add Employee
 </button>
 
@@ -34,37 +34,8 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Employee</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form method="post" action="/Employee/save" id="EmployeeForm">
+    <div class="modal-dialog" id="content">
 
-            <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="name" name="name">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="department" class="form-label">Department</label>
-                        <input class="form-control" id="department" name="department" placeholder="Marketing" >
-                    </div> 
-
-                    <div class="mb-3">
-                        <label for="jobTitle" class="form-label">Job Title</label>
-                        <input class="form-control" id="jobTitle" name="jobTitle"  placeholder="Supervisor">
-                    </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save changes</button>
-            </div>
-            </form>
-
-        </div>
     </div>
 </div>
 
@@ -72,10 +43,11 @@
 <script>
 
     $(document).on('submit', '#EmployeeForm', function (e) {
-        e.preventDefault()
+        //e.preventDefault()
 
 
-        $.post($(this).attr("action"), { 
+
+       /* $.post($(this).attr("action"), { 
             name: $("#name").val(), 
             department: $("#department").val(), 
             jobTitle:$("#jobTitle").val() 
@@ -94,13 +66,33 @@
 
             }
 
-         })
+         })*/
         });
 
 
    $(document).ready(function () {
        employeeTableRequest();
    });
+
+    $(document).on("click",".load-modal", function(){
+
+        $.get("/Employee/Create/" + $(this).data("id")).then(response => {
+            console.log(response);
+
+            $(".modal #content").html(response)
+        })
+    })
+
+        $(document).on('click', '.delete-employee', function () {
+            const employeeId = $(this).data('id');
+            $.post("/Employee/Delete", { id: employeeId }).then(response => {
+                if (response.success) {
+                    employeeTableRequest();
+                } else {
+                    alert(response.message);
+                }
+            });
+        });
 
     function employeeTableRequest() {
             $.get("/Employee/Table").then(response => {
@@ -117,7 +109,12 @@
                                                             <td>${element.name}</td>
                                                             <td>${element.department} </td>
                                                             <td>${element.jobTitle} </td>
-                                                            <td></td>
+                                                            <td>
+                                                                       <div class="btn-group btn-xs">
+                                                                                       <button  data-id="${element.id}" class="btn btn-info load-modal"  data-bs-toggle="modal" data-bs-target="#exampleModal">edit</div>
+                                                                               <button class="btn btn-danger delete-employee" data-id="${element.id}">delete</div>
+                                                                       </div>
+                                                            </td>
                                                            </tr> `)
 
 

@@ -1,0 +1,182 @@
+﻿@model HrApplication.Models.EmployeeVM
+
+@{
+    ViewData["Title"] = "Employee Dashboard";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/dashboard.css">
+    <style>
+        main {
+            padding-bottom: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+                <div class="sidebar-sticky">
+                    <h2 class="text-center text-light">Dashboard</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('personalInfo')">Personal Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('attendanceLeave')">Attendance and Leave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('performanceMetrics')">Performance Metrics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('taskManagement')">Task Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('timeTracking')">Time Tracking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('announcementsNotifications')">Announcements and Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('projectOverview')">Project Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('trainingDevelopment')">Training and Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('benefitsCompensation')">Benefits and Compensation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('feedbackSupport')">Feedback and Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('dependents')">Dependents</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <button onclick="window.location.href='@Url.Action("Index", "Employee")'" class="btn btn-primary mt-3 mb-3">Back to Employee List</button>
+                <div id="personalInfo" class="section">
+                    <h1>@Model.Name</h1>
+                    <p>@Model.JobTitle</p>
+                    <p>@Model.Department</p>
+                </div>
+                <div id="attendanceLeave" class="section" style="display:none;">
+                    <h2>Attendance and Leave</h2>
+                    <p>Attendance: 95%</p>
+                    <p>Leave Balance: 10 days</p>
+                    <p>Upcoming Leave: 2 days</p>
+                </div>
+                <div id="performanceMetrics" class="section" style="display:none;">
+                    <h2>Performance Metrics</h2>
+                    <p>KPI: 80%</p>
+                    <p>Last Review: Satisfactory</p>
+                    <p>Goals: Improve code quality</p>
+                </div>
+                <div id="taskManagement" class="section" style="display:none;">
+                    <h2>Task Management</h2>
+                    <ul>
+                        <li>Task 1: Complete UI design</li>
+                        <li>Task 2: Fix bugs in module</li>
+                        <li>Task 3: Write unit tests</li>
+                    </ul>
+                </div>
+                <div id="timeTracking" class="section" style="display:none;">
+                    <h2>Time Tracking</h2>
+                    <p>Hours Worked This Week: 35</p>
+                    <p>Project A: 20 hours</p>
+                    <p>Project B: 15 hours</p>
+                </div>
+                <div id="announcementsNotifications" class="section" style="display:none;">
+                    <h2>Announcements and Notifications</h2>
+                    <ul>
+                        <li>Team meeting on Friday</li>
+                        <li>New project kickoff next week</li>
+                        <li>Office closed on holiday</li>
+                    </ul>
+                </div>
+                <div id="projectOverview" class="section" style="display:none;">
+                    <h2>Project Overview</h2>
+                    <p>Project A: In progress</p>
+                    <p>Project B: Completed</p>
+                    <p>Project C: Not started</p>
+                </div>
+                <div id="trainingDevelopment" class="section" style="display:none;">
+                    <h2>Training and Development</h2>
+                    <p>Upcoming Training: Advanced JavaScript</p>
+                    <p>Completed: React Basics</p>
+                </div>
+                <div id="benefitsCompensation" class="section" style="display:none;">
+                    <h2>Benefits and Compensation</h2>
+                    <p>Salary: $80,000/year</p>
+                    <p>Health Insurance: Active</p>
+                    <p>Retirement Plan: 401(k)</p>
+                </div>
+                <div id="feedbackSupport" class="section" style="display:none;">
+                    <h2>Feedback and Support</h2>
+                    <p><a href="#">Submit Feedback</a></p>
+                    <p><a href="#">Contact Support</a></p>
+                    <p><a href="#">Participate in Survey</a></p>
+                </div>
+                <div id="dependents" class="section" style="display:none;">
+                    <h2>Dependents</h2>
+                    <ul id="dependentsList">
+                        <!-- List of dependents -->
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/dashboard.js"></script>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+
+            if (sectionId === 'dependents') {
+                displayDependents();
+            }
+        }
+
+        function displayDependents() {
+            const dependentsList = document.getElementById('dependentsList');
+            dependentsList.innerHTML = '';
+
+            //  dependents data
+            const dependentsData = [
+                { name: 'Parent 1', relationship: 'Parent' },
+                { name: 'Sibling 1', relationship: 'Sibling' },
+                { name: 'Friend 1', relationship: 'Friend' }
+            ];
+
+            dependentsData.forEach(function (dependent, index) {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${dependent.name} (${dependent.relationship})`;
+                dependentsList.appendChild(listItem);
+            });
+        }
+
+        // Populate employee info from the model
+        document.getElementById("employeeName").textContent = "@Model.Name";
+        document.getElementById("employeePosition").textContent = "@Model.JobTitle";
+        document.getElementById("employeeDepartment").textContent = "@Model.Department";
+
+        //  default section on page load
+        showSection('personalInfo');
+    </script>
+</body>
+</html>

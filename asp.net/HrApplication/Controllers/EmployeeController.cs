@@ -22,10 +22,30 @@ namespace HrApplication.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Dashboard(int employeeId)
+        {
+            var employee = _databaseContext.Employees.FirstOrDefault(e => e.Id == employeeId);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+
+            var employeeViewModel = new EmployeeVM
+            {
+                Id = employee.Id,
+                Name = employee.Name,
+                Department = employee.Department,
+                JobTitle = employee.JobTitle,
+            };
+
+            return View(employeeViewModel);
+        }
+
         [HttpPost]
         public IActionResult Save(EmployeeVM employeeVM)
         {
-            string statusMessage = "Employee Created Successfully";
+            string statusMessage;
 
             if (employeeVM.Id != 0)
             {
@@ -38,12 +58,22 @@ namespace HrApplication.Controllers
                     employee.JobTitle = employeeVM.JobTitle;
 
                     _databaseContext.Employees.Update(employee);
+                    int updateStatus = _databaseContext.SaveChanges();
+
+                    if (updateStatus == 0)
+                    {
+                        statusMessage = "Failed to update employee.";
+                        TempData["StatusMessage"] = statusMessage;
+                        return RedirectToAction(nameof(Index));
+                    }
 
                     statusMessage = "Employee updated successfully";
                 }
                 else
                 {
-                    return Json(new { success = false, message = "Employee not found." });
+                    statusMessage = "Employee not found.";
+                    TempData["StatusMessage"] = statusMessage;
+                    return RedirectToAction(nameof(Index));
                 }
             }
             else
@@ -54,17 +84,23 @@ namespace HrApplication.Controllers
                     Department = employeeVM.Department,
                     JobTitle = employeeVM.JobTitle
                 });
+
+                int status = _databaseContext.SaveChanges();
+
+                if (status == 0)
+                {
+                    statusMessage = "Failed to save changes. Please check your entries.";
+                    TempData["StatusMessage"] = statusMessage;
+                    return RedirectToAction(nameof(Index));
+                }
+
+                statusMessage = "Employee Created Successfully";
             }
 
-            int status = _databaseContext.SaveChanges();
-
-            if (status == 0)
-            {
-                return Json(new { success = false, message = "Failed to save changes. Please check your entries." });
-            }
-
-            return Json(new { success = true, message = statusMessage });
+            TempData["StatusMessage"] = statusMessage;
+            return RedirectToAction(nameof(Index));
         }
+
 
         [HttpGet]
         public IActionResult Table()
@@ -95,7 +131,6 @@ namespace HrApplication.Controllers
                 }
                 else
                 {
-                    // Handle case where employee with given id is not found
                     return NotFound();
                 }
             }
@@ -129,5 +164,3 @@ namespace HrApplication.Controllers
         }
     }
 }
-    
-

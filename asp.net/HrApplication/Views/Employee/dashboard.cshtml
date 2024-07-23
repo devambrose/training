@@ -38,6 +38,9 @@
                             <a class="nav-link text-light" href="#" onclick="showSection('taskManagement')">Task Management</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="showSection('dependents')">Dependents</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-light" href="#" onclick="showSection('timeTracking')">Time Tracking</a>
                         </li>
                         <li class="nav-item">
@@ -55,9 +58,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#" onclick="showSection('feedbackSupport')">Feedback and Support</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#" onclick="showSection('dependents')">Dependents</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </nav>
@@ -158,9 +159,9 @@
 
             //  dependents data
             const dependentsData = [
-                { name: 'Parent 1', relationship: 'Parent' },
-                { name: 'Sibling 1', relationship: 'Sibling' },
-                { name: 'Friend 1', relationship: 'Friend' }
+                { name: 'John ', relationship: 'Parent' },
+                { name: 'Juma ', relationship: 'Sibling' },
+                { name: 'Merry ', relationship: 'Friend' }
             ];
 
             dependentsData.forEach(function (dependent, index) {

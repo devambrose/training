@@ -7,6 +7,10 @@ C:\training\asp.net\HrApplication\bin\Debug\net8.0\HrApplication.runtimeconfig.j
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\HrApplication.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\HrApplication.pdb
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Humanizer.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -17,6 +21,10 @@ C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.EntityFrameworkCore
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\training\asp.net\HrApplication\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\MySqlConnector.dll
 C:\training\asp.net\HrApplication\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
@@ -83,6 +91,7 @@ C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.GeneratedMSBuil
 C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.AssemblyInfoInputs.cache
 C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.AssemblyInfo.cs
 C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.csproj.CoreCompileInputs.cache
+C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.RazorAssemblyInfo.cache
 C:\training\asp.net\HrApplication\obj\Debug\net8.0\HrApplication.RazorAssemblyInfo.cs

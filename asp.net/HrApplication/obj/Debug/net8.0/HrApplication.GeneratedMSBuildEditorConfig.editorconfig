@@ -18,6 +18,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\training\asp.net\HrApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/training/asp.net/HrApplication/Views/Account/DisplayMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEaXNwbGF5TWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/training/asp.net/HrApplication/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/training/asp.net/HrApplication/Views/Account/RedirectMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWRpcmVjdE1lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/training/asp.net/HrApplication/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/training/asp.net/HrApplication/Views/Account/TestRedirectForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUZXN0UmVkaXJlY3RGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/training/asp.net/HrApplication/Views/Allowance/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb3dhbmNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

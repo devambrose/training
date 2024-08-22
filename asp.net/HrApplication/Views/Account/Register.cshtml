@@ -1,0 +1,176 @@
+﻿@model HrApplication.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+        <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+        </div>
+}
+<div class="centered-form">
+    <div class="form-container">
+        <h2>Register</h2>
+
+<form asp-controller="Account" asp-action="Register" method="post" id="registrationForm">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="Username">Username</label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group position-relative">
+        <label asp-for="Password">Password</label>
+        <input asp-for="Password" id="Password" type="password" class="form-control" />
+        <i class="fa fa-eye toggle-password" id="togglePassword"></i>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group position-relative">
+        <label asp-for="ConfirmPassword">Confirm Password</label>
+        <input asp-for="ConfirmPassword" id="ConfirmPassword" type="password" class="form-control" />
+        <i class="fa fa-eye toggle-password" id="toggleConfirmPassword"></i>
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" id="button">
+        <input type="submit" value="Register" class="btn btn-primary "  />
+    </div>
+</form>
+    </div>
+</div>
+
+
+<!-- Login link -->
+<div class="form-group text-center">
+    <p>Already have an account? <a href="@Url.Action("Login", "Account")">Login here</a>.</p>
+</div>
+
+
+<script>
+    //toggle password visibility
+    document.getElementById('togglePassword').addEventListener('click', function () {
+        const passwordField = document.getElementById('Password');
+        const type = passwordField.type === 'password' ? 'text' : 'password';
+        passwordField.type = type;
+
+        //toggle eye icon
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+    });
+
+    document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+        const passwordField = document.getElementById('ConfirmPassword');
+        const type = passwordField.type === 'password' ? 'text' : 'password';
+        passwordField.type = type;
+
+        //toggle eye icon
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+    });
+    
+    
+    
+    
+    //submittion of input data
+   /* document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username= document.getElementById('Username').value;
+        const email= document.getElementById('Email').value;
+        const password= document.getElementById('Password').value;
+        const confirmPassword= document.getElementById('ConfirmPassword').value;
+
+        // Check if any fields are empty
+        if (!username || !email || !password || !confirmPassword) {
+            alert('Please fill in all the fields.');
+            return;
+        }
+
+        // Check if passwords match
+      //  if (password !== confirmPassword){
+       //     alert('Password and Confirmation Password do not match.');
+       //     return;
+      //  };
+
+        const formData = {
+            Username: username,
+            Email: email,
+            Password: password,
+            ConfirmPassword: confirmPassword
+           
+        };
+
+
+
+        console.log('Form Data Submitted:', formData);
+
+        event.target.submit();
+    });
+    */
+
+    // Redirect to login page when success alert is clicked
+   // document.getElementById('successAlert')?.addEventListener('click', function () {
+    //    window.location.href = '@Url.Action("Login", "Account")';
+   // });
+
+</script>
+
+<style>
+    .position-relative {
+        position: relative;
+    }
+
+    .form-control {
+        padding-right: 40px; 
+    }
+  
+
+    .toggle-password {
+        position: absolute;
+        top: 70%;
+        right: 10px;
+        cursor: pointer;
+        transform: translateY(-50%);
+        font-size: 15px;
+        color: #aaa;
+        cursor: pointer;
+        z-index: 10;}
+        
+    .centered-form{
+        min-height: 60vh; /* Full height (100% viewport height) */
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+    }
+
+    #button {
+        margin: 5px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 400px; /* You can adjust this width as needed */
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+                     }
+    }
+</style>
+
+
+

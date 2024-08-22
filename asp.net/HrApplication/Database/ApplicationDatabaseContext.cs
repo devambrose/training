@@ -1,9 +1,12 @@
 ﻿using HrApplication.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace HrApplication.Database
 {
-    public class ApplicationDatabaseContext : DbContext
+   // public class ApplicationDatabaseContext : DbContext
+        public class ApplicationDatabaseContext : IdentityDbContext<IdentityUser>
     {
 
         public DbSet<Employee> Employees { get; set; }
@@ -13,12 +16,6 @@ namespace HrApplication.Database
 
 
         public DbSet<Allowance> Allowances { get; set; }
-
-
-
-        //configuration to connect to the database
-
-       // define our table structures and the tables that we are going to access
 
         public ApplicationDatabaseContext(DbContextOptions<ApplicationDatabaseContext> options) : base(options) { }
 

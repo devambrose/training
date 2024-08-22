@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Display Message";
+}
+
+<h2>Display Message</h2>
+
+@if (TempData["TestMessage"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["TestMessage"]
+    </div>
+}

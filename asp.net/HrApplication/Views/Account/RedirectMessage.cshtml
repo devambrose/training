@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Redirect Message";
+}
+
+<h2>Display Message</h2>
+
+@if (TempData["RedirectMessage"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["RedirectMessage"]
+    </div>
+}
